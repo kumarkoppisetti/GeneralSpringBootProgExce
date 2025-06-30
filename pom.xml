@@ -1,69 +1,159 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+<?xml version="1.0" encoding="UTF-8"?> 
 
-	<groupId>com.hcl.vamsi</groupId>
-	<artifactId>GeneralProgExec</artifactId>
-	<version>2.0.0-SNAPSHOT</version>
-	<packaging>war</packaging>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
 
-	<name>GeneralProgExec</name>
-	<description>GeneralProgExec project for Spring Boot</description>
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.3.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
-	</parent>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"> 
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>11</java.version>
-		<sonar.host.url>http://20.84.92.125:9000/</sonar.host.url>
-                <sonar.login>admin</sonar.login>
-                <sonar.password>admin123</sonar.password>
-      
-	</properties>
+ 
 
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
+  <modelVersion>4.0.0</modelVersion> 
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-tomcat -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>			
-		</dependency>
-	</dependencies>
+ 
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+  <groupId>com.hcl.vamsi</groupId> 
 
+  <artifactId>GeneralProgExec</artifactId> 
 
-</project>
+  <version>2.0.0-SNAPSHOT</version> 
+
+  <packaging>war</packaging> 
+
+ 
+
+  <name>GeneralProgExec</name> 
+
+  <description>GeneralProgExec project for Spring Boot</description> 
+
+ 
+
+  <parent> 
+
+    <groupId>org.springframework.boot</groupId> 
+
+    <artifactId>spring-boot-starter-parent</artifactId> 
+
+    <version>2.0.3.RELEASE</version> 
+
+    <relativePath/> 
+
+  </parent> 
+
+ 
+
+  <properties> 
+
+    <java.version>11</java.version> 
+
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
+
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> 
+
+  </properties> 
+
+ 
+
+  <dependencies> 
+
+    <!-- Spring Boot Core --> 
+
+    <dependency> 
+
+      <groupId>org.springframework.boot</groupId> 
+
+      <artifactId>spring-boot-starter</artifactId> 
+
+    </dependency> 
+
+ 
+
+    <!-- Spring Web --> 
+
+    <dependency> 
+
+      <groupId>org.springframework.boot</groupId> 
+
+      <artifactId>spring-boot-starter-web</artifactId> 
+
+    </dependency> 
+
+ 
+
+    <!-- Spring Boot Tomcat --> 
+
+    <dependency> 
+
+      <groupId>org.springframework.boot</groupId> 
+
+      <artifactId>spring-boot-starter-tomcat</artifactId> 
+
+    </dependency> 
+
+ 
+
+    <!-- DevTools for hot reload (optional) --> 
+
+    <dependency> 
+
+      <groupId>org.springframework.boot</groupId> 
+
+      <artifactId>spring-boot-devtools</artifactId> 
+
+      <scope>runtime</scope> 
+
+    </dependency> 
+
+ 
+
+    <!-- Spring Boot Test --> 
+
+    <dependency> 
+
+      <groupId>org.springframework.boot</groupId> 
+
+      <artifactId>spring-boot-starter-test</artifactId> 
+
+      <scope>test</scope> 
+
+    </dependency> 
+
+  </dependencies> 
+
+ 
+
+  <build> 
+
+    <plugins> 
+
+      <!-- Spring Boot Plugin --> 
+
+      <plugin> 
+
+        <groupId>org.springframework.boot</groupId> 
+
+        <artifactId>spring-boot-maven-plugin</artifactId> 
+
+      </plugin> 
+
+ 
+
+      <!-- SonarQube Plugin --> 
+
+      <plugin> 
+
+        <groupId>org.sonarsource.scanner.maven</groupId> 
+
+        <artifactId>sonar-maven-plugin</artifactId> 
+
+        <version>4.0.0.4121</version> 
+
+      </plugin> 
+
+    </plugins> 
+
+  </build> 
+
+ 
+
+</project> 
